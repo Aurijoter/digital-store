@@ -1,12 +1,21 @@
 //import React from "react";
-import styled from "styled-components"
+import styled from 'styled-components';
+
+import Section from '../Components/Section';
 
 export default function Orders() {
 
+    const testLink = {text: 'Produtos', href: 'https://www.google.com'};
+    const list = [];
 
     return (
         <PageContainer>
-            <h1>Orders</h1>
+            <Section 
+                title={'Orders'} 
+                titleAlign={'center'} 
+                link={testLink}
+                list={list}
+            />
         </PageContainer>
     )
 }
