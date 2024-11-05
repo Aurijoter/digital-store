@@ -7,6 +7,7 @@ import { Row, Col, Typography, Divider } from 'antd';
 import { CopyrightOutlined } from '@ant-design/icons';
 
 import Logo from "./Logo";
+import Informations from './Informations';
 import LogoFooter from '../assets/logo-footer.svg';
 import FacebookLogo from '../assets/facebook.svg';
 import InstagramLogo from '../assets/instagram.svg';
@@ -35,26 +36,13 @@ export default function Footer() {
                     </Col>
 
                     <Col span={5} offset={4}>
-                        <Typography.Title style={{color: Colors.white, fontFamily: 'Inter'}} level={5}>Informação</Typography.Title>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Sobre Drip Store</Typography.Paragraph>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Segurança</Typography.Paragraph>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Wishlist</Typography.Paragraph>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Blog</Typography.Paragraph>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Trabalhe conosco</Typography.Paragraph>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Meus Pedidos</Typography.Paragraph>
+                        <Informations data={Constants.Information}/>
                     </Col>
                     <Col span={5}>
-                        <Typography.Title style={{color: Colors.white, fontFamily: 'Inter'}} level={5}>Categorias</Typography.Title>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Camisetas</Typography.Paragraph>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Calças</Typography.Paragraph>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Bonés</Typography.Paragraph>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Headphones</Typography.Paragraph>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>Tênis</Typography.Paragraph>
-                        </Col>
+                        <Informations data={Constants.Categories}/>
+                    </Col>
                     <Col span={5}>
-                        <Typography.Title style={{color: Colors.white, fontFamily: 'Inter'}} level={5}>Contato</Typography.Title>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>{Constants.Address}</Typography.Paragraph>
-                        <Typography.Paragraph style={{color: Colors.white, fontFamily: 'Inter'}}>{Constants.Phone}</Typography.Paragraph>
+                        <Informations data={Constants.Contact}/>
                     </Col>
                 </Row>
                 <Divider style={{  borderColor: Colors.white, marginTop: '75px' }}></Divider>
