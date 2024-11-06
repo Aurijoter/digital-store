@@ -4,21 +4,27 @@ import { Carousel } from "antd";
 import styled from "styled-components";
 
 export default function Gallery(props) {
-    const { list, Width, Height, Radius } = props;
+    const { images, Width, Height, Radius } = props;
 
     const contentStyle = {
         width: Width,
         height: Height,
         borderRadius: Radius,
+        background: '#364d79',
+        boxSizing: 'border-box',
     };
 
 
     
     return (
         <div style={contentStyle}>
-            <Carousel arrows infinite={false} style={contentStyle}>
-                {list?.map((image, index) => {
-                    return <Img key={index} style={contentStyle} src={image?.src} />;
+            <Carousel 
+                arrows 
+                infinite={false} 
+                fade
+            >
+                {images?.map((image, index) => {
+                    return <Img key={index} src={image?.src} />;
                 })}
             </Carousel>
         </div>
@@ -27,6 +33,7 @@ export default function Gallery(props) {
 
 
 const Img = styled.img`
+    display: flex;
     width: 100%;
     height: fit-content;
 `;

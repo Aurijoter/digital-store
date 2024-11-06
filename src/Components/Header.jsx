@@ -105,9 +105,10 @@ const ContainerHeader = styled.div`
     width: 100%;
     height: 192px;
     justify-content: space-between;
-    position: fixed;
-    padding: 0 3%;
+    padding: 2% 3% 1% 3%;
     box-sizing: border-box;
+    background-color:  ${Colors.white};
+    z-index: 9;
 `
 
 const Input = styled.input`

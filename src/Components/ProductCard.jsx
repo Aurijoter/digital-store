@@ -11,7 +11,7 @@ export default function ProductCard(props){
     return (
         <ContainerCard>
             <Row>
-                <Img src={image} />
+                <img src={image} />
             </Row>
             <Row>
                 <Typography.Text
@@ -52,10 +52,4 @@ const ContainerCard = styled.div`
     width: 292px;
     height: auto;
     box-sizing: border-box;
-`
-
-const Img = styled.img`
-    width: 100%;
-    height: fit-content;
-
 `

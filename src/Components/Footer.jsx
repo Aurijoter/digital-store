@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import * as Colors from '../Style/Constants';
 import * as Constants from '../Components/Constants';
 import styled from "styled-components";
@@ -59,10 +57,11 @@ export default function Footer() {
 const ContainerFooter = styled.div`
     width: 100%;
     height: 454px;
-    position: fixed;
-    padding: 0 3%;
+    bottom: 0;
+    padding: 1% 3% 0 3%;
     box-sizing: border-box;
     background-color: ${Colors.dark_gray};
+    z-index: 9;
 `
 
 const SocialMediaLogo = styled.img`

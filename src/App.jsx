@@ -27,14 +27,19 @@ export default function App() {
         <Route path="/categorias" element={<Categories/>} />
         <Route path="/meus-pedidos" element={<Orders/>} />
 
-
-
       </Routes>
-      <Footer />
+
+      <FooterContainer>
+        <Footer />
+      </FooterContainer>
     </BrowserRouter>
   )
 }
 
 const NavContainer = styled.div`
+  width: 100%;
+`
+
+const FooterContainer = styled.div`
   width: 100%;
 `
