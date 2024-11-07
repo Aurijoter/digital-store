@@ -41,7 +41,7 @@ export default function Products() {
                     </Row>
                     <Divider style={{ borderColor: Colors.light_gray_2}} />
                     <FilterGroup title={'Marka'} inputType={'checkbox'} options={Constants.Marka} />
-                    <FilterGroup title={'Categoria'} inputType={'checkbox'} options={Constants.Marka} />
+                    <FilterGroup title={'Categoria'} inputType={'radio'} options={Constants.Marka} />
                 </Col>
             </Col>
             <Col span={17} offset={1}>

@@ -9,8 +9,6 @@ export default function FilterGroup(props) {
 
     const { title, inputType, options } = props;
 
-    console.log(options)
-
     return (
         <FilterContainer>
             <Row>
@@ -21,8 +19,8 @@ export default function FilterGroup(props) {
 
             {options?.map((item) => {
                 return(
-                    <Row>
-                        <Input type={inputType} checked={item.value} />
+                    <Row key={item?.id}>
+                        <Input type={inputType} defaultChecked={item.value} />
                         <Typography.Text>{item.text}</Typography.Text>
                     </Row>
                 )
@@ -37,7 +35,24 @@ const FilterContainer = styled.div`
     margin-top: 20px;
 `
 
-const Input = styled.input`
-    width: 22px;
-    height: 22px;
-`
+const Input = styled.input.attrs({ type: "checkbox" })`
+appearance: none;
+width: 20px;
+height: 20px;
+border: 2px solid #999;
+border-radius: 3px;
+cursor: pointer;
+
+&:checked {
+    background-color: ${Colors.primary};
+    border-color: ${Colors.primary};
+}
+
+&:checked::before {
+    content: "✔";
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+}
+`;

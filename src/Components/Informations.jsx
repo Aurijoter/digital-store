@@ -19,11 +19,11 @@ export default function Informations(props) {
                 </Row>
                 {data?.informations?.map((info) => {
                     return(
-                        <Row>
+                        <Row key={info?.text}>
                             <Typography.Paragraph 
                                 style={{color: Colors.white, fontFamily: 'Inter', cursor: 'pointer'}}
                             >
-                                {info.text}
+                                {info?.text}
                             </Typography.Paragraph>
                         </Row>
                     )

@@ -1,4 +1,5 @@
-//import React from "react";
+/* eslint-disable */
+import React from "react";
 import styled from 'styled-components';
 
 import Section from '../Components/Section';
@@ -9,7 +10,7 @@ import Collection_1 from '../../public/images/collection-1.png'
 import Collection_2 from '../../public/images/collection-2.png'
 import Collection_3 from '../../public/images/collection-3.png'
 
-export default function Home() {
+export default function Home({busca}) {
 
     return (
         <PageContainer>
@@ -21,7 +22,7 @@ export default function Home() {
 
             </Section>
             <Section title={'Produtos em alta'} titleAlign={'left'} >
-                <ProductListing products={Constants.productsList} />
+                <ProductListing products={Constants.productsList} busca={busca} />
             </Section>
         </PageContainer>
     )

@@ -22,8 +22,8 @@ export default function Section({ children, title, titleAlign, link, list }) {
                 </Col>
                 <Col span={10}>
                     <Row justify='end' style={{ cursor: 'pointer'}}>
-                        <Link>
-                            <Typography.Text onClick={() => alert(link.href)} style={{ color: Colors?.primary }}>
+                        <Link to={link?.href} relative="path">
+                            <Typography.Text style={{ color: Colors?.primary }}>
                                 {link?.text}
                             </Typography.Text>
                         </Link>

@@ -14,3 +14,12 @@ export const light_gray   = "#8F8F8F"
 export const light_gray_2 = "#CCCCCC"
 export const light_gray_3 = "#F5F5F5"
 export const white        = "#FFFFFF"
+
+// ProductColors
+export const ProductColors = [
+    "#6FEEFF",
+    "#C92071",
+    "#5E5E5E",
+    "#6D70B7",
+    "#DEC899"
+]

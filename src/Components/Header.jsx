@@ -12,8 +12,7 @@ import LogoHeader from '../assets/logo-header.svg';
 import MiniCart from '../assets/mini-cart.svg'
 
 export default function Header(props) {
-    const { countProducts, setCountProducts } = props;
-
+    const { countProducts, setCountProducts, busca, setBusca } = props;
 
     return (
         <>
@@ -21,7 +20,12 @@ export default function Header(props) {
                 <Row align='center' justify='space-between'>
                     <Logo logo={LogoHeader} />
                     <div style={{ width: '30%', height: '60px' }}>
-                        <Input placeholder="Pesquisar Produto..." type="text" />
+                        <Input 
+                            placeholder="Pesquisar Produto..." 
+                            type="text" 
+                            value={busca} 
+                            onChange={(event) => {setBusca(event?.target?.value); console.log(busca)}}
+                        />
                         <SearchOutlined
                             style={{
                                 display: 'inline-flex',
