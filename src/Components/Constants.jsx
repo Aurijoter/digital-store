@@ -125,3 +125,10 @@ export const productsList =[
         price: 49.9
     },
 ]
+
+export const Marka =  [
+    {text: "Options 1", value: "opt1"},
+    {text: "Options 2"},
+    {text: "Options 3", value: "opt3"},
+    {text: "Options 4"},
+]

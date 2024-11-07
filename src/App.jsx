@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header"
 import Footer from './Components/Footer';
 import Home from "./Pages/HomePage";
-import Products from './Pages/ProductsPage';
+import Products from './Pages/ProductsList';
 import Categories from './Pages/CategoriesPage';
 import Orders from './Pages/MyOrdersPage';
 
