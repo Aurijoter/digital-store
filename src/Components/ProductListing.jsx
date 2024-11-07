@@ -30,10 +30,5 @@ const Container = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    >  * {
-        flex-basis: 25%; /* Cada item ocupará 25% do contêiner */
-        max-width: 25%;  /* Limita a largura máxima a 25% */
-        box-sizing: border-box;
-    }
+    justify-content: space-between;
 `

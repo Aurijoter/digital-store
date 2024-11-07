@@ -15,14 +15,13 @@ export default function Home() {
         <PageContainer>
             <Gallery images={Constants?.HomeSlide} Width={'1440px'} Height={'681px'} Radius={'25px'} />
             <Section title={'Coleções em destaque'}  titleAlign={'center'} >
-                <BoxContent src={Collection_1} alt='' />
-                <BoxContent src={Collection_2} alt='' />
-                <BoxContent src={Collection_3} alt='' />
+                <BoxContent src={Collection_1} alt='image 1' />
+                <BoxContent src={Collection_2} alt='image 2' />
+                <BoxContent src={Collection_3} alt='image 3' />
 
             </Section>
-            <Section title={'Produtos em alta'}  titleAlign={'left'} >
+            <Section title={'Produtos em alta'} titleAlign={'left'} >
                 <ProductListing products={Constants.productsList} />
-
             </Section>
         </PageContainer>
     )

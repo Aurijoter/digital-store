@@ -15,15 +15,15 @@ export default function ProductCard(props){
             </Row>
             <Row>
                 <Typography.Text
-                    style={{ color: Colors.dark_gray, fontSize: '24px' }}
+                    style={{ color: Colors.dark_gray, fontSize: '24px', flexDirection: 'row' }}
                 > 
                     {name}
                 </Typography.Text>
             </Row>
-            <Row>
+            <Row >
                 <Col span={8} offset={0}>
                     <Typography.Text
-                        style={{ display: 'flex', fontSize: '24px', color: priceDiscount ? Colors.light_gray : Colors.dark_gray, textDecoration: priceDiscount ? 'line-through' : 'none' }}
+                        style={{ display: 'flex', flexDirection: 'row', fontSize: '24px', color: priceDiscount ? Colors.light_gray : Colors.dark_gray, textDecoration: priceDiscount ? 'line-through' : 'none' }}
                     > 
                         R$ {price}
                     </Typography.Text>
@@ -35,6 +35,7 @@ export default function ProductCard(props){
                                 display: 'flex', 
                                 fontSize: '24px', 
                                 fontWeight: '700',
+                                flexDirection: 'row',
                                 color: Colors.dark_gray 
                             }}
                             >
@@ -52,4 +53,5 @@ const ContainerCard = styled.div`
     width: 292px;
     height: auto;
     box-sizing: border-box;
+    margin-bottom: 50px;
 `
